@@ -85,15 +85,15 @@ select {
 }
 
 body {
-	min-width: 320px;
+	min-width: 280px;
 	max-width: 1920px;
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 170%;
-	background: #1f1f1f;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	
 }
 
@@ -108,5 +108,9 @@ button{
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
+	padding: 0 15px;
 	
+}
+section{
+	padding: 30px 0;
 }

@@ -3,6 +3,139 @@
 @import "fonts";
 @import "global";
 
+.header {
+	background-color: #a1b7c8;
+	@media (min-width: 768px) {
+		min-height: 100px;
+	}
+	@media (min-width: 992px) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		/* padding-top: 50px;
+		padding-bottom: 50px; */
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		@media (min-width: 768px) {
+			padding-top: 29px;
+			padding-bottom: 28px;
+		}
+		@media (min-width: 992px) {
+			flex-direction: column;
+			height: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@media (min-width: 1440px) {
+			flex-direction: column;
+			height: 100%;
+			padding-top: 60px;
+			
+		}
+	}
+	&__contacts {
+		position: absolute;
+		background-color: #a1b7c8;
+		top: 61px;
+		left: 0;
+		right: 0;
+		padding: 30px 15px;
+		color: #fff;
+		display: none;
+		@media (min-width: 768px) {
+			top: 101px;
+			
+		}
+		@media (min-width: 998px) {
+			display: block;
+			position: static;
+		}
 
+		&-list {
+			@media (min-width: 768px) {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+			}
+			@media (min-width: 998px) {
+				flex-direction: column;
+			}
+		}
+		&-item {
+			&:not(:last-child) {
+				margin-bottom: 50px;
+			}
+			@media (min-width: 768px) {
+				margin-bottom: 0px !important;
+			}
+			@media (min-width: 998px) {
+				&:not(:last-child) {
+					margin-bottom: 50px !important;
+				}
+			}
+		}
+	}
+	&__contacts-burger {
+		display: block;
+		width: 27px;
+		height: 14px;
+		background: transparent url("../images/menu.svg");
+		border: none;
+		outline: none;
+		padding: 0;
+		@media (min-width: 992px) {
+			display: none;
+		}
+	}
+	&__logo {
+		width: 124px;
+		@media (min-width: 768px) {
+			width: 180px;
+		}
+	}
+}
+
+.contacts {
+	&__head {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+	&__link {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	&__social {
+		&-list {
+			display: flex;
+		}
+		&-link {
+			display: inline-block;
+			height: 26px;
+		}
+		&-item {
+			display: block;
+			width: 26px;
+			height: 26px;
+			margin-right: 18px;
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+.present {
+	&__title {
+	}
+}
 
 @import "media";
