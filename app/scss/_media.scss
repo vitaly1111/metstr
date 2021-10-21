@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
 	.page {
 		background-image: linear-gradient(to right, #a1b7c8 24.5%, transparent 24%) !important;
 	}
@@ -6,5 +6,11 @@
 @media (min-width: 2750px) {
 	.page {
 		background-image: linear-gradient(to right, #a1b7c8 30%, transparent 30%) !important;
+	}
+}
+ */
+ @media (min-width: 998px) {
+	.container{
+		padding: 0 30px 0 285px;
 	}
 }
