@@ -1,46 +1,10 @@
-@media(max-width: 992px){
-	.header__hero{
-		flex-wrap: wrap-reverse;
+@media (min-width: 1440px) {
+	.page {
+		background-image: linear-gradient(to right, #a1b7c8 24.5%, transparent 24%) !important;
 	}
-
-	.header__img{
-		margin-top: 25px;
-		flex: 0 0 100%;
-		justify-content: center;
-		text-align: center;
-		&-img{
-			width: 50%;
-			margin: 0 auto;
-		}
-	}
-
-	.header__content{
-		flex: 0 0 100%;
-		margin-bottom: 25px;
-
-	}
-	.header__title{
-		text-align: center;
-		font-size: 62px;
-	}
-	.header__subtitle{
-		font-size: 26px;
-		text-align: center;
-	}
-
-	.header__tags{
-		justify-content: center;
-	}
-
 }
-
-@media(max-width: 868px){
-	.header__title{
-		font-size: 36px;
-		line-height: 42px;
-	}
-	.header__subtitle{
-		font-size: 22px;
-		line-height: 32px;
+@media (min-width: 2750px) {
+	.page {
+		background-image: linear-gradient(to right, #a1b7c8 30%, transparent 30%) !important;
 	}
 }
