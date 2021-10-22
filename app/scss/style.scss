@@ -350,7 +350,6 @@ section {
 	}
 	&__adapt {
 		background-image: url("../images/adapt.svg");
-		
 	}
 	&__clean {
 		background-image: url(../images/clean.svg);
@@ -359,6 +358,80 @@ section {
 	&__copyright {
 		background-image: url("../images/copyright.svg");
 		order: 5;
+	}
+}
+
+.portfolio {
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 120%;
+		/* identical to box height, or 36px */
+
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&__card {
+		max-width: 252px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 14px;
+		&-img {
+			width: 155px;
+			height: 92px;
+			background-image: url("../images/device-macbook-pro.svg");
+			background-size: cover;
+			padding: 5px 18px 12px;
+			align-self: center;
+			margin-bottom: 30px;
+		}
+		&-data {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 600;
+			font-size: 14px;
+			margin-bottom: 23px;
+		}
+		&-client {
+			line-height: 120%;
+		}
+		&-date {
+			line-height: 140%;
+		}
+		&-title {
+			font-size: 16px;
+			line-height: 120%;
+		}
+	}
+	&__arrow{
+		width: 26px;
+		height: 26px;
+
+		display: block;
+		background-image: url('../images/arrow.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		border: none;
+		outline: none;
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		&-left{
+			left: 0;
+		}
+		&-right{
+			right:0;
+			transform: rotate(180deg) translateY(50%);
+		}
+	}
+
+	&__slider{
+		position: relative;
+		max-width: 290px;
+		margin: 0 auto;
 	}
 }
 
