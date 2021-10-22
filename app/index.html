@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script defer src="js/lib.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
@@ -78,7 +79,7 @@
 					<p class="present__description">
 						Меня зовут Кир Сорокин, я разработчик сайтов с&nbsp;опытом 1&nbsp;год
 					</p>
-					<button class="present__order-btn">
+					<button class="present__order-btn open__modal">
 						Заказать
 					</button>
 				</div>
@@ -135,7 +136,7 @@
 						</li>
 						<li class="portfolio-item swiper-slide">
 							<div class="portfolio__card">
-								<img src="./images/cinema-1.jpg" alt="" class="portfolio__card-img">
+								<img src="./images/dom-1.jpg" alt="" class="portfolio__card-img">
 								<div class="portfolio__card-data">
 									<span class="portfolio__card-client">
 										Клиент: Full Apple
@@ -152,7 +153,7 @@
 						</li>
 						<li class="portfolio-item swiper-slide">
 							<div class="portfolio__card">
-								<img src="" alt="" class="portfolio__card-img">
+								<img src="./images/go-1.jpg" alt="" class="portfolio__card-img">
 								<div class="portfolio__card-data">
 									<span class="portfolio__card-client">
 										Клиент: Game Over
@@ -169,7 +170,7 @@
 						</li>
 						<li class="portfolio-item swiper-slide">
 							<div class="portfolio__card">
-								<img src="" alt="" class="portfolio__card-img">
+								<img src="./images/iphone-1.jpg" alt="" class="portfolio__card-img">
 								<div class="portfolio__card-data">
 									<span class="portfolio__card-client">
 										Клиент: Friendly House
@@ -177,15 +178,15 @@
 									<date class="portfolio__card-date" datetime='2020'>
 										год: 2020
 									</date>
-									<div class="portfolio__card-title">
-										Landing-page
-									</div>
+								</div>
+								<div class="portfolio__card-title">
+									Landing-page
 								</div>
 							</div>
 						</li>
 						<li class="portfolio-item swiper-slide">
 							<div class="portfolio__card">
-								<img src="" alt="" class="portfolio__card-img">
+								<img src="./images/friendly-house-1.jpg" alt="" class="portfolio__card-img">
 								<div class="portfolio__card-data">
 									<span class="portfolio__card-client">
 										Клиент: ItalGroup boutique
@@ -193,9 +194,9 @@
 									<date class="portfolio__card-date" datetime='2020'>
 										год: 2020
 									</date>
-									<div class="portfolio__card-title">
-										Многостраничный сайт
-									</div>
+								</div>
+								<div class="portfolio__card-title">
+									Многостраничный сайт
 								</div>
 							</div>
 						</li>
@@ -205,7 +206,56 @@
 				</div>
 			</div>
 		</section>
+
 	</main>
+	<div class="page__overlay page__overlay-modal">
+		<div class="modal">
+			<h2 class="modal__title">Заполните форму и я свяжусь с вами</h2>
+			<form class="modal__form callback">
+				<label class="modal__label">
+					<span class="modal__label-text"> ФИО</span>
+					<input class="modal__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+				</label>
+				<label class="modal__label">
+					<span class="modal__label-text">Телефон</span>
+					<input class="modal__input" type="phone" name="phone" placeholder="Введите ваш номер телефона">
+				</label>
+				<fieldset class='modal__group'>
+					<legend class="modal__title">Где удобнее связаться?</legend>
+
+					<label class="modal__group-label">
+						<input type="radio" name="connect" id="telegramm" value="telegramm">
+						<span class="modal__text">Телеграмм</span>
+					</label>
+					<label class="modal__group-label">
+						<input type="radio" name="connect" id="whatsup" value="watsup">
+						<span class="modal__text">Whatsup</span>
+					</label>
+					<label class="modal__group-label">
+						<input type="radio" name="connect" id="call" value="call">
+						<span class="modal__text">Позвонить</span>
+					</label>
+
+					<label class="modal__group-label">
+						<input type="radio" name="connect" id="viber" value="viber">
+						<span class="modal__text">Viber</span>
+					</label>
+				</fieldset>
+				<button class="present__order-btn">
+					Заказать
+				</button>
+			</form>
+			<button class="modal__close">
+				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="29.1681" height="1.94454" rx="0.972271"
+						transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 20.625)" fill="#282626" />
+					<rect width="29.1681" height="1.94454" rx="0.972271"
+						transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.375 0)" fill="#282626" />
+				</svg>
+
+			</button>
+		</div>
+	</div>
 	<script defer src="js/main.min.js"></script>
 </body>
 

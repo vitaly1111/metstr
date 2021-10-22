@@ -1,3 +1,5 @@
+
+
 const swiper=new Swiper('.swiper',{
 	// Optional parameters
 
@@ -32,3 +34,23 @@ const swiper=new Swiper('.swiper',{
 
 
 });
+
+$('.header__contacts-burger').click(function(){
+	$('.header__contacts').slideToggle();
+})
+
+
+$('.open__modal').click(()=>{
+	$('.page__overlay-modal').show(400).css('display','flex');
+})
+
+
+ $('.modal__close').click(()=>{
+	$('.page__overlay-modal').hide(400);
+}) 
+
+$('.page__overlay').click((e)=>{
+	if (e.target.classList.contains('page__overlay')){
+		$('.page__overlay-modal').hide(400);
+	}
+})
