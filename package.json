@@ -16,6 +16,6 @@
     "gulp-uglify-es": "^3.0.0",
     "node-sass": "^6.0.1",
     "sass": "^1.39.0",
-    "swiper": "^7.0.7"
+    "swiper": "^7.0.9"
   }
 }
